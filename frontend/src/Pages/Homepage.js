@@ -23,7 +23,6 @@ const Homepage = () => {
       borderRadius='lg'>
         <Text
         fontSize='4xl'
-        fontFamily='Work sans'
         textAlign='center'
         color='white'>Talk-A-Tive</Text>
       </Box>

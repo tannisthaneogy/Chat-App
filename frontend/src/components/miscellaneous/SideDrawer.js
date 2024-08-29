@@ -27,7 +27,6 @@ import axios from 'axios';
 import ChatLoading from '../ChatLoading';
 import UserListItem from '../UserAvatar/UserListItem';
 import { getSender } from '../../config/ChatLogics';
-import NotificationBadge, { Effect } from "react-notification-badge";
 
 const SideDrawer = () => {
   const [search, setSearch] = useState("");
@@ -121,7 +120,7 @@ const SideDrawer = () => {
           </Text>
         </Button>
       </Tooltip>
-      <Text fontSize='2xl' fontFamily='Work sans' color='white'>
+      <Text fontSize='2xl' color='white'>
         Talk-A-Tive
       </Text>
       <div style={{
@@ -130,10 +129,6 @@ const SideDrawer = () => {
       }}>
         <Menu>
           <MenuButton p={2}>
-            <NotificationBadge
-            count={notification.length}
-            effect={Effect.SCALE}
-            />
             <FaBell color='white'/>
           </MenuButton>
           <MenuList pl={2} bg='#171717' borderColor='#232323' color='white' borderWidth={2} mt={2}>
