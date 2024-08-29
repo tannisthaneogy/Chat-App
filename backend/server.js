@@ -31,7 +31,9 @@ const server = app.listen(PORT, console.log(`Server started on PORT ${PORT}`.yel
 const io = require("socket.io")(server, {
     pingTimeout: 60000,
     cors: {
-        origin: "*",
+        origin: ["https://chat-app-api-mauve-one.vercel.app/"],
+        methods: ["POST", "GET"],
+        credentials: true
     },
 });
 
